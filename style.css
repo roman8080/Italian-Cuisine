@@ -7,8 +7,13 @@
   box-sizing: border-box;
 }
 
+header {
+  padding-top: 51px;
+}
 header .container {
-  padding: 51px 164px 0;
+  max-width: 1257px;
+  padding: 0 10px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,4 +101,87 @@ header .container .right button {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
+}
+
+.hero {
+  margin-top: 120px;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1257px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.hero .container .left .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 40px;
+  border-radius: 126px;
+  background-color: rgba(255, 136, 0, 0.1647058824);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #ff8a00;
+}
+.hero .container .left h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  line-height: 110%;
+  margin-top: 22px;
+}
+.hero .container .left p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #5c4529;
+  line-height: 200%;
+  margin-top: 30px;
+  max-width: 523px;
+}
+.hero .container .left .buttons {
+  display: flex;
+  gap: 23px;
+  margin-top: 77px;
+}
+.hero .container .left .buttons button {
+  width: 232px;
+  height: 74px;
+  border-radius: 163px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.hero .container .left .buttons button:hover {
+  opacity: 85%;
+}
+.hero .container .left .buttons button:active {
+  scale: 1.05;
+}
+.hero .container .left .buttons button:first-child {
+  background-color: #ff8a00;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.hero .container .left .buttons button:last-child {
+  background-color: #3fa72f;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.hero .container .right {
+  width: 700px;
+  height: 620px;
+}
+.hero .container .right img {
+  width: 100%;
+  height: 100%;
+  margin-top: 55px;
 }/*# sourceMappingURL=style.css.map */

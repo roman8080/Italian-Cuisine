@@ -11,10 +11,27 @@ $--font-family1: "Poppins", sans-serif;
 $--font-family2: "Raleway", sans-serif;
 $--font-family3: "Tinos", serif;
 
+@mixin btn_size {
+  width: 232px;
+  height: 74px;
+  border-radius: 163px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+  &:hover {
+    opacity: 85%;
+  }
+  &:active {
+    scale: 1.05;
+  }
+}
 // HEADER
 header {
+  padding-top: 51px;
   .container {
-    padding: 51px 164px 0;
+    max-width: 1257px;
+    padding: 0 10px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,3 +131,80 @@ header {
 }
 
 // HERO
+.hero {
+  margin-top: 120px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1257px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    .left {
+      .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 152px;
+        height: 40px;
+        border-radius: 126px;
+        background-color: #ff88002a;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $--font-family2;
+        color: #ff8a00;
+      }
+      h1 {
+        font-size: 80px;
+        font-weight: 700;
+        font-family: $--font-family2;
+        line-height: 110.00000000000001%;
+        margin-top: 22px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $--font-family1;
+        color: #5c4529;
+        line-height: 200%;
+        margin-top: 30px;
+        max-width: 523px;
+      }
+      .buttons {
+        display: flex;
+        gap: 23px;
+        margin-top: 77px;
+        button {
+          @include btn_size();
+          &:first-child {
+            background-color: #ff8a00;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: $--font-family1;
+            color: #ffffff;
+          }
+          &:last-child {
+            background-color: #3fa72f;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: $--font-family1;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .right {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      width: 700px;
+      height: 620px;
+      img {
+        width: 100%;
+        height: 100%;
+        margin-top: 55px;
+      }
+    }
+  }
+}
