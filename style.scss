@@ -25,9 +25,19 @@ $--font-family3: "Tinos", serif;
     scale: 1.05;
   }
 }
+
+@mixin my_media($max_width) {
+  @media screen and (max-width: $max_width) {
+    @content;
+  }
+}
+
 // HEADER
 header {
   padding-top: 51px;
+  @include my_media(960px) {
+    padding-top: 25px;
+  }
   .container {
     max-width: 1257px;
     padding: 0 10px;
@@ -64,6 +74,9 @@ header {
       }
     }
     .middle {
+      @include my_media(960px) {
+        display: none;
+      }
       ul {
         font-size: 14px;
         font-family: $--font-family1;
@@ -133,6 +146,15 @@ header {
         &:active {
           scale: 1.05;
         }
+        @include my_media(960px) {
+          display: none;
+        }
+      }
+      .burger {
+        display: none;
+        @include my_media(960px) {
+          display: block;
+        }
       }
     }
   }
@@ -148,7 +170,9 @@ header {
     max-width: 1257px;
     padding: 0 10px;
     margin: 0 auto;
-
+    @include my_media(960px) {
+      flex-direction: column;
+    }
     .left {
       .text {
         display: flex;
@@ -162,6 +186,11 @@ header {
         font-weight: 400;
         font-family: $--font-family2;
         color: #ff8a00;
+        @include my_media(500px) {
+          width: 93px;
+          height: 25px;
+          font-size: 12px;
+        }
       }
       h1 {
         font-size: 80px;
@@ -169,6 +198,9 @@ header {
         font-family: $--font-family2;
         line-height: 110.00000000000001%;
         margin-top: 22px;
+        @include my_media(500px) {
+          font-size: 60px;
+        }
       }
       p {
         font-size: 20px;
@@ -178,13 +210,24 @@ header {
         line-height: 200%;
         margin-top: 30px;
         max-width: 523px;
+        @include my_media(500px) {
+          font-size: 14px;
+        }
       }
       .buttons {
         display: flex;
         gap: 23px;
         margin-top: 77px;
+        @include my_media(500px) {
+          margin-top: 40px;
+        }
         button {
           @include btn_size();
+          @include my_media(500px) {
+            width: 140px;
+            height: 44px;
+            font-size: 10px !important;
+          }
           &:first-child {
             background-color: #ff8a00;
             font-size: 20px;
@@ -203,8 +246,12 @@ header {
       }
     }
     .right {
-      width: 700px;
+      max-width: 700px;
       height: 620px;
+
+      @include my_media(500px) {
+        height: 315px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -671,6 +718,72 @@ header {
     .bottom {
       img {
         margin-bottom: 99px;
+      }
+    }
+  }
+}
+
+// DETAILS
+.details {
+  padding: 238px 0;
+  .container {
+    background: url(/images/Background.svg);
+    background-size: cover;
+
+    max-width: 1150px;
+    margin: 0 auto;
+    min-height: 588px;
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-size: 80px;
+        font-weight: 700;
+        font-family: $--font-family3;
+        color: #ffffff;
+        line-height: 200%;
+      }
+      h3 {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $--font-family1;
+        color: #ffffff;
+        line-height: 200%;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $--font-family1;
+        color: #ffffff;
+        line-height: 200%;
+      }
+      .pp {
+        margin-left: 170px;
+      }
+      .buttons {
+        display: flex;
+        gap: 23px;
+        margin-top: 50px;
+        .btn1 {
+          @include btn_size();
+          font-size: 20px;
+          font-weight: 600;
+          font-family: $--font-family1;
+          color: #ffffff;
+          background-color: #ff8a00;
+        }
+        .btn2 {
+          @include btn_size();
+          font-size: 20px;
+          font-weight: 600;
+          font-family: $--font-family1;
+          font-size: 20px;
+          font-weight: 600;
+          font-family: $--font-family1;
+          color: #311f09;
+        }
       }
     }
   }
