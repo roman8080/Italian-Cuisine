@@ -507,4 +507,75 @@ header .container .right button:active {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   margin-top: 132px;
+}
+
+.our-chef {
+  padding: 175px 0 271px;
+}
+.our-chef .container {
+  max-width: 1112px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.our-chef .container .top h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Tinos", serif;
+  color: #311f09;
+  line-height: 200%;
+}
+.our-chef .container .middle {
+  margin-top: 135px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.our-chef .container .middle .element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-chef .container .middle .element img {
+  width: 100%;
+}
+.our-chef .container .middle .element h3 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #311f09;
+  line-height: 200%;
+  margin-top: 40px;
+}
+.our-chef .container .middle .element p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #a08d76;
+  line-height: 200%;
+  margin-top: 30px;
+}
+.our-chef .container .bottom button {
+  width: 235px;
+  height: 74px;
+  border-radius: 162px;
+  background-color: #ff8a00;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 200%;
+  border: none;
+  margin-top: 150px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.our-chef .container .bottom button:hover {
+  opacity: 85%;
+}
+.our-chef .container .bottom button:active {
+  scale: 1.05;
 }/*# sourceMappingURL=style.css.map */
