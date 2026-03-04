@@ -206,11 +206,6 @@ header .container .right .burger {
   gap: 23px;
   margin-top: 77px;
 }
-@media screen and (max-width: 500px) {
-  .hero .container .left .buttons {
-    margin-top: 40px;
-  }
-}
 .hero .container .left .buttons button {
   width: 232px;
   height: 74px;
@@ -273,6 +268,11 @@ header .container .right .burger {
   padding: 0 10px;
   margin: 0 auto;
 }
+@media screen and (max-width: 960px) {
+  .delicacy .container {
+    flex-direction: column-reverse;
+  }
+}
 .delicacy .container .left {
   margin-top: 120px;
 }
@@ -287,12 +287,23 @@ header .container .right .burger {
   color: #311f09;
   line-height: 110%;
 }
+@media screen and (max-width: 500px) {
+  .delicacy .container .right h1 {
+    margin-top: 74px;
+    font-size: 35px;
+  }
+}
 .delicacy .container .right h1 span {
   font-size: 80px;
   font-weight: 700;
   font-family: "Tinos", serif;
   color: #ff8a00;
   line-height: 110%;
+}
+@media screen and (max-width: 500px) {
+  .delicacy .container .right h1 span {
+    font-size: 35px;
+  }
 }
 .delicacy .container .right p {
   font-size: 20px;
@@ -302,6 +313,12 @@ header .container .right .burger {
   line-height: 200%;
   margin-top: 60px;
   max-width: 433px;
+}
+@media screen and (max-width: 500px) {
+  .delicacy .container .right p {
+    font-size: 12px;
+    margin-top: 21px;
+  }
 }
 .delicacy .container .right button {
   width: 232px;
@@ -326,9 +343,22 @@ header .container .right .burger {
   line-height: 200%;
   margin-top: 122px;
 }
+@media screen and (max-width: 500px) {
+  .delicacy .container .right button {
+    width: 168px;
+    height: 55px;
+    font-size: 14px;
+    margin-top: 53px;
+  }
+}
 
 .our-menu {
   margin-top: 164px;
+}
+@media screen and (max-width: 500px) {
+  .our-menu {
+    margin-top: 62px;
+  }
 }
 .our-menu .container {
   max-width: 1120px;
@@ -339,12 +369,25 @@ header .container .right .burger {
   padding: 0 10px;
   margin: 0 auto;
 }
+@media screen and (max-width: 500px) {
+  .our-menu .container {
+    margin-bottom: 77px;
+  }
+}
 .our-menu .container .top h1 {
   font-family: "Tinos", serif;
   font-size: 80px;
   font-weight: 700;
   color: #311f09;
   line-height: 200%;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .top h1 {
+    font-size: 35px;
+    width: 218px;
+    text-align: center;
+    line-height: 115%;
+  }
 }
 .our-menu .container .middle {
   display: flex;
@@ -366,6 +409,14 @@ header .container .right .burger {
   font-family: "Poppins", sans-serif;
   margin-top: 60px;
 }
+@media screen and (max-width: 500px) {
+  .our-menu .container .middle button {
+    width: 83px;
+    height: 40px;
+    font-size: 12px;
+    gap: 10px;
+  }
+}
 .our-menu .container .middle .middle1 {
   width: 232px;
   height: 74px;
@@ -377,13 +428,27 @@ header .container .right .burger {
   font-weight: 600;
   line-height: 200%;
 }
+@media screen and (max-width: 500px) {
+  .our-menu .container .middle .middle1 {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
 .our-menu .container .menus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 370px;
+  }
+}
 .our-menu .container .menus .menu {
-  width: 344px;
+  max-width: 344px;
+  width: 100%;
   height: 637px;
   border-radius: 70px;
   background-color: rgba(208, 204, 199, 0.1333333333);
@@ -393,12 +458,23 @@ header .container .right .burger {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu .img1 {
+    width: 114px;
+    height: 114px;
+  }
+}
 .our-menu .container .menus .menu h3 {
   font-size: 30px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #311f09;
   line-height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu h3 {
+    font-size: 14px;
+  }
 }
 .our-menu .container .menus .menu .logo {
   display: flex;
@@ -407,6 +483,12 @@ header .container .right .burger {
   gap: 15px;
   margin-right: 40px;
   margin-top: 25px;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu .logo {
+    width: 10px;
+    height: 10px;
+  }
 }
 .our-menu .container .menus .menu p {
   font-size: 14px;
@@ -417,6 +499,11 @@ header .container .right .burger {
   width: 287px;
   text-align: center;
   margin-top: 15px;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu p {
+    font-size: 12px;
+  }
 }
 .our-menu .container .menus .menu .buttons {
   display: flex;
@@ -430,6 +517,11 @@ header .container .right .burger {
   font-family: "Poppins", sans-serif;
   color: #311f09;
   line-height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu .buttons h3 {
+    font-size: 16px;
+  }
 }
 .our-menu .container .menus .menu .buttons button {
   width: 157px;
@@ -451,11 +543,37 @@ header .container .right .burger {
 .our-menu .container .menus .menu .buttons button:active {
   scale: 1.05;
 }
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu .buttons button {
+    display: none;
+  }
+}
+.our-menu .container .menus .menu .buttons .btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 83px;
+  background-color: #ff8a00;
+  color: #ffffff;
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .menus .menu .buttons .btn1 {
+    display: block;
+  }
+}
 .our-menu .container .bottom {
   display: flex;
   gap: 30px;
   margin-top: 88px;
   margin-bottom: 200px;
+}
+@media screen and (max-width: 500px) {
+  .our-menu .container .bottom {
+    display: none;
+  }
 }
 .our-menu .container .bottom .left {
   display: flex;
@@ -505,6 +623,11 @@ header .container .right .burger {
   background-color: #fff4e7;
   padding: 86px 0;
 }
+@media screen and (max-width: 500px) {
+  .table {
+    padding: 60px 0;
+  }
+}
 .table .container {
   max-width: 1542px;
   padding: 0 10px;
@@ -512,6 +635,11 @@ header .container .right .burger {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+@media screen and (max-width: 500px) {
+  .table .container {
+    flex-direction: column-reverse;
+  }
 }
 .table .container .left .images {
   position: relative;
@@ -537,12 +665,22 @@ header .container .right .burger {
   line-height: 110%;
   max-width: 453px;
 }
+@media screen and (max-width: 500px) {
+  .table .container .right h1 {
+    font-size: 35px;
+  }
+}
 .table .container .right h1 span {
   font-size: 80px;
   font-weight: 700;
   font-family: "Tinos", serif;
   color: #ff8a00;
   line-height: 110%;
+}
+@media screen and (max-width: 500px) {
+  .table .container .right h1 span {
+    font-size: 35px;
+  }
 }
 .table .container .right p {
   font-size: 20px;
@@ -552,6 +690,12 @@ header .container .right .burger {
   line-height: 200%;
   margin-top: 50px;
   max-width: 443px;
+}
+@media screen and (max-width: 500px) {
+  .table .container .right p {
+    font-size: 12px;
+    margin-top: 32px;
+  }
 }
 .table .container .right button {
   width: 232px;
@@ -574,6 +718,14 @@ header .container .right .burger {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   margin-top: 132px;
+}
+@media screen and (max-width: 500px) {
+  .table .container .right button {
+    font-size: 14px;
+    width: 168px;
+    height: 55px;
+    margin-top: 40px;
+  }
 }
 
 .our-chef {

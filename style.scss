@@ -221,9 +221,9 @@ header {
         display: flex;
         gap: 23px;
         margin-top: 77px;
-        @include my_media(500px) {
-          margin-top: 40px;
-        }
+        // @include my_media(500px) {
+        //   margin-top: 40px;
+        // }
         button {
           @include btn_size();
           @include my_media(500px) {
@@ -275,7 +275,9 @@ header {
     max-width: 1440px;
     padding: 0 10px;
     margin: 0 auto;
-
+    @include my_media(960px) {
+      flex-direction: column-reverse;
+    }
     .left {
       //   width: 706px;
       //   height: 689px;
@@ -284,6 +286,9 @@ header {
       img {
         width: 100%;
         height: 100%;
+        @include my_media(500px) {
+          //   margin-top: -50px;
+        }
       }
     }
     .right {
@@ -293,12 +298,19 @@ header {
         font-family: $--font-family3;
         color: #311f09;
         line-height: 110.00000000000001%;
+        @include my_media(500px) {
+          margin-top: 74px;
+          font-size: 35px;
+        }
         span {
           font-size: 80px;
           font-weight: 700;
           font-family: $--font-family3;
           color: #ff8a00;
           line-height: 110.00000000000001%;
+          @include my_media(500px) {
+            font-size: 35px;
+          }
         }
       }
       p {
@@ -309,6 +321,10 @@ header {
         line-height: 200%;
         margin-top: 60px;
         max-width: 433px;
+        @include my_media(500px) {
+          font-size: 12px;
+          margin-top: 21px;
+        }
       }
       button {
         @include btn_size();
@@ -319,6 +335,12 @@ header {
         background-color: #ff8a00;
         line-height: 200%;
         margin-top: 122px;
+        @include my_media(500px) {
+          width: 168px;
+          height: 55px;
+          font-size: 14px;
+          margin-top: 53px;
+        }
       }
     }
   }
@@ -327,7 +349,9 @@ header {
 // OUR MENU
 .our-menu {
   margin-top: 164px;
-  //   display: flex;
+  @include my_media(500px) {
+    margin-top: 62px;
+  }
 
   .container {
     max-width: 1120px;
@@ -337,6 +361,9 @@ header {
     flex-direction: column;
     padding: 0 10px;
     margin: 0 auto;
+    @include my_media(500px) {
+      margin-bottom: 77px;
+    }
     .top {
       h1 {
         font-family: $--font-family3;
@@ -344,11 +371,18 @@ header {
         font-weight: 700;
         color: #311f09;
         line-height: 200%;
+        @include my_media(500px) {
+          font-size: 35px;
+          width: 218px;
+          text-align: center;
+          line-height: 114.99999999999999%;
+        }
       }
     }
     .middle {
       display: flex;
       gap: 27px;
+
       button {
         display: flex;
         align-items: center;
@@ -364,6 +398,12 @@ header {
         color: #311f09;
         font-family: $--font-family1;
         margin-top: 60px;
+        @include my_media(500px) {
+          width: 83px;
+          height: 40px;
+          font-size: 12px;
+          gap: 10px;
+        }
       }
 
       .middle1 {
@@ -376,14 +416,24 @@ header {
         font-size: 20px;
         font-weight: 600;
         line-height: 200%;
+        @include my_media(500px) {
+          width: 110px;
+          height: 40px;
+          font-size: 12px;
+        }
       }
     }
     .menus {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+      @include my_media(500px) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 370px;
+      }
       .menu {
-        width: 344px;
+        max-width: 344px;
+        width: 100%;
         height: 637px;
         border-radius: 70px;
         background-color: #d0ccc722;
@@ -392,7 +442,15 @@ header {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        img {
+        // @include my_media(500px) {
+        //   width: 155px;
+        //   height: 265px;
+        // }
+        .img1 {
+          @include my_media(500px) {
+            width: 114px;
+            height: 114px;
+          }
         }
         h3 {
           font-size: 30px;
@@ -400,6 +458,9 @@ header {
           font-family: $--font-family1;
           color: #311f09;
           line-height: 100%;
+          @include my_media(500px) {
+            font-size: 14px;
+          }
         }
         .logo {
           display: flex;
@@ -408,6 +469,10 @@ header {
           gap: 15px;
           margin-right: 40px;
           margin-top: 25px;
+          @include my_media(500px) {
+            width: 10px;
+            height: 10px;
+          }
         }
         p {
           font-size: 14px;
@@ -418,6 +483,9 @@ header {
           width: 287px;
           text-align: center;
           margin-top: 15px;
+          @include my_media(500px) {
+            font-size: 12px;
+          }
         }
         .buttons {
           display: flex;
@@ -430,6 +498,9 @@ header {
             font-family: $--font-family1;
             color: #311f09;
             line-height: 100%;
+            @include my_media(500px) {
+              font-size: 16px;
+            }
           }
           button {
             width: 157px;
@@ -450,6 +521,23 @@ header {
             &:active {
               scale: 1.05;
             }
+            @include my_media(500px) {
+              display: none;
+            }
+          }
+          .btn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33px;
+            height: 33px;
+            border-radius: 83px;
+            background-color: #ff8a00;
+            color: #ffffff;
+            display: none;
+            @include my_media(500px) {
+              display: block;
+            }
           }
         }
       }
@@ -459,6 +547,9 @@ header {
       gap: 30px;
       margin-top: 88px;
       margin-bottom: 200px;
+      @include my_media(500px) {
+        display: none;
+      }
       .left {
         display: flex;
         // align-items: center;
@@ -516,6 +607,9 @@ header {
 .table {
   background-color: #fff4e7;
   padding: 86px 0;
+  @include my_media(500px) {
+    padding: 60px 0;
+  }
   .container {
     max-width: 1542px;
     padding: 0 10px;
@@ -524,6 +618,9 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    @include my_media(500px) {
+      flex-direction: column-reverse;
+    }
     .left {
       .images {
         position: relative;
@@ -549,12 +646,18 @@ header {
         color: #311f09;
         line-height: 110.00000000000001%;
         max-width: 453px;
+        @include my_media(500px) {
+          font-size: 35px;
+        }
         span {
           font-size: 80px;
           font-weight: 700;
           font-family: $--font-family3;
           color: #ff8a00;
           line-height: 110.00000000000001%;
+          @include my_media(500px) {
+            font-size: 35px;
+          }
         }
       }
       p {
@@ -565,6 +668,10 @@ header {
         line-height: 200%;
         margin-top: 50px;
         max-width: 443px;
+        @include my_media(500px) {
+          font-size: 12px;
+          margin-top: 32px;
+        }
       }
       button {
         @include btn_size();
@@ -574,6 +681,12 @@ header {
         font-family: $--font-family1;
         color: #ffffff;
         margin-top: 132px;
+        @include my_media(500px) {
+          font-size: 14px;
+          width: 168px;
+          height: 55px;
+          margin-top: 40px;
+        }
       }
     }
   }
@@ -791,3 +904,5 @@ header {
     }
   }
 }
+
+// FOOTER
