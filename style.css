@@ -196,6 +196,7 @@ header .container .right button:active {
 
 .delicacy {
   margin-top: 147px;
+  background-color: rgba(63, 198, 110, 0.1333333333);
 }
 .delicacy .container {
   display: flex;
@@ -204,7 +205,6 @@ header .container .right button:active {
   max-width: 1440px;
   padding: 0 10px;
   margin: 0 auto;
-  background-color: rgba(63, 198, 110, 0.1333333333);
 }
 .delicacy .container .left {
   margin-top: 120px;
@@ -310,7 +310,12 @@ header .container .right button:active {
   font-weight: 600;
   line-height: 200%;
 }
-.our-menu .container .menu {
+.our-menu .container .menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.our-menu .container .menus .menu {
   width: 344px;
   height: 637px;
   border-radius: 70px;
@@ -321,14 +326,14 @@ header .container .right button:active {
   justify-content: center;
   flex-direction: column;
 }
-.our-menu .container .menu h3 {
+.our-menu .container .menus .menu h3 {
   font-size: 30px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #311f09;
   line-height: 100%;
 }
-.our-menu .container .menu .logo {
+.our-menu .container .menus .menu .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +341,7 @@ header .container .right button:active {
   margin-right: 40px;
   margin-top: 25px;
 }
-.our-menu .container .menu p {
+.our-menu .container .menus .menu p {
   font-size: 14px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
@@ -346,20 +351,20 @@ header .container .right button:active {
   text-align: center;
   margin-top: 15px;
 }
-.our-menu .container .menu .buttons {
+.our-menu .container .menus .menu .buttons {
   display: flex;
   gap: 34px;
   align-items: center;
   margin-top: 25px;
 }
-.our-menu .container .menu .buttons h3 {
+.our-menu .container .menus .menu .buttons h3 {
   font-size: 25px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #311f09;
   line-height: 100%;
 }
-.our-menu .container .menu .buttons button {
+.our-menu .container .menus .menu .buttons button {
   width: 157px;
   height: 55px;
   border-radius: 162px;
@@ -370,11 +375,20 @@ header .container .right button:active {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   line-height: 200%;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.our-menu .container .menus .menu .buttons button:hover {
+  opacity: 85%;
+}
+.our-menu .container .menus .menu .buttons button:active {
+  scale: 1.05;
 }
 .our-menu .container .bottom {
   display: flex;
   gap: 30px;
   margin-top: 88px;
+  margin-bottom: 200px;
 }
 .our-menu .container .bottom .left {
   display: flex;
@@ -418,4 +432,79 @@ header .container .right button:active {
   color: #ffffff;
   background-color: #311f09;
   border-radius: 15px;
+}
+
+.table {
+  background-color: #fff4e7;
+  padding: 86px 0;
+}
+.table .container {
+  max-width: 1542px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.table .container .left .images {
+  position: relative;
+}
+.table .container .left .img1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.table .container .left .img2 {
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+.table .container .right {
+  padding: 80px;
+}
+.table .container .right h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Tinos", serif;
+  color: #311f09;
+  line-height: 110%;
+  max-width: 453px;
+}
+.table .container .right h1 span {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Tinos", serif;
+  color: #ff8a00;
+  line-height: 110%;
+}
+.table .container .right p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #5c4529;
+  line-height: 200%;
+  margin-top: 50px;
+  max-width: 443px;
+}
+.table .container .right button {
+  width: 232px;
+  height: 74px;
+  border-radius: 163px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.table .container .right button:hover {
+  opacity: 85%;
+}
+.table .container .right button:active {
+  scale: 1.05;
+}
+.table .container .right button {
+  background-color: #ff8a00;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-top: 132px;
 }/*# sourceMappingURL=style.css.map */
