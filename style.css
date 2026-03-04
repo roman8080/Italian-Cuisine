@@ -137,6 +137,11 @@ header .container .right .burger {
 .hero {
   margin-top: 120px;
 }
+@media screen and (max-width: 500px) {
+  .hero {
+    margin-top: 62px;
+  }
+}
 .hero .container {
   display: flex;
   align-items: center;
