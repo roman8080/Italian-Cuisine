@@ -951,4 +951,67 @@ header .container .right .burger {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #311f09;
+}
+
+.footer {
+  background-color: #311f09;
+  padding: 150px 164px 70px;
+}
+.footer .container {
+  max-width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .left p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #e3e2e0;
+  width: 352px;
+  line-height: 200%;
+  margin-top: 45px;
+}
+.footer .container .left .logo {
+  display: flex;
+  gap: 30px;
+  margin-top: 39px;
+}
+.footer .container .right {
+  display: flex;
+  gap: 25px;
+}
+.footer .container .right ul {
+  list-style: none;
+}
+.footer .container .right ul .l1 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #ff8a00;
+  line-height: 200%;
+}
+.footer .container .right ul .l2 {
+  width: 280px;
+}
+.footer .container .right ul li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #e3e2e0;
+  line-height: 200%;
+  margin-top: 15px;
+}
+.footer .bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+}
+.footer .bottom p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #e3e2e0;
+  line-height: 200%;
 }/*# sourceMappingURL=style.css.map */
