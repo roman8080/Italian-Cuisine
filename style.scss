@@ -381,23 +381,26 @@ header {
     }
     .middle {
       display: flex;
-      gap: 27px;
+      overflow-x: auto;
+      width: 100%;
+      gap: 25px;
+      margin-top: 60px;
+
+      @include my_media(500px) {
+        gap: 10px;
+      }
 
       button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border-radius: 162px;
+        flex-shrink: 0;
         border: none;
         width: 192px;
         height: 74px;
         background-color: #d0ccc72e;
         font-size: 20px;
         font-weight: 400;
-        line-height: 200%;
         color: #311f09;
         font-family: $--font-family1;
-        margin-top: 60px;
         @include my_media(500px) {
           width: 83px;
           height: 40px;
@@ -427,26 +430,35 @@ header {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+      margin-top: 60px;
+
+      @include my_media(900px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
       @include my_media(500px) {
         grid-template-columns: repeat(2, 1fr);
-        max-width: 370px;
+        gap: 14px;
       }
       .menu {
         max-width: 344px;
         width: 100%;
-        height: 637px;
+        padding: 33px 30px;
+        // height: 637px;
         border-radius: 70px;
         background-color: #d0ccc722;
-        margin-top: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        // @include my_media(500px) {
-        //   width: 155px;
-        //   height: 265px;
-        // }
+        @include my_media(500px) {
+          padding: 12px;
+          min-height: 265px;
+          border-radius: 18.6px;
+        }
         .img1 {
+          width: 100%;
           @include my_media(500px) {
             width: 114px;
             height: 114px;
@@ -467,11 +479,13 @@ header {
           align-items: center;
           justify-content: center;
           gap: 15px;
-          margin-right: 40px;
           margin-top: 25px;
-          @include my_media(500px) {
-            width: 10px;
-            height: 10px;
+
+          img {
+            @include my_media(500px) {
+              width: 10px;
+              height: 10px;
+            }
           }
         }
         p {
@@ -480,17 +494,23 @@ header {
           font-family: $--font-family1;
           color: #59442b;
           line-height: 200%;
-          width: 287px;
+          max-width: 287px;
           text-align: center;
           margin-top: 15px;
           @include my_media(500px) {
             font-size: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
         }
         .buttons {
+          width: 100%;
           display: flex;
-          gap: 34px;
+          gap: 10px;
           align-items: center;
+          justify-content: space-between;
           margin-top: 25px;
           h3 {
             font-size: 25px;
@@ -500,6 +520,7 @@ header {
             line-height: 100%;
             @include my_media(500px) {
               font-size: 16px;
+              color: #ff8a00;
             }
           }
           button {
@@ -526,7 +547,6 @@ header {
             }
           }
           .btn1 {
-            display: flex;
             justify-content: center;
             align-items: center;
             width: 33px;
@@ -536,7 +556,7 @@ header {
             color: #ffffff;
             display: none;
             @include my_media(500px) {
-              display: block;
+              display: flex;
             }
           }
         }
