@@ -913,7 +913,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 524px;
+        max-width: 524px;
         margin-top: 90px;
         text-align: center;
         position: relative;
@@ -958,14 +958,21 @@ header {
 
 // DETAILS
 .details {
-  padding: 238px 0;
+  padding: 238px 20px;
+
   .container {
     background: url(/images/Background.svg);
     background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
     max-width: 1150px;
     margin: 0 auto;
-    min-height: 588px;
+    border-radius: 60px;
+    padding: 26px 0 80px;
+    @include my_media(500px) {
+      padding: 30px 50px 35px;
+    }
     .card {
       display: flex;
       align-items: center;
@@ -977,6 +984,11 @@ header {
         font-family: $--font-family3;
         color: #ffffff;
         line-height: 200%;
+        @include my_media(500px) {
+          font-size: 40px;
+          text-align: center;
+          line-height: 114.99999999999999%;
+        }
       }
       h3 {
         font-size: 40px;
@@ -984,6 +996,11 @@ header {
         font-family: $--font-family1;
         color: #ffffff;
         line-height: 200%;
+        @include my_media(500px) {
+          font-size: 16px;
+          line-height: 100%;
+          margin-top: 32px;
+        }
       }
       p {
         font-size: 20px;
@@ -991,14 +1008,26 @@ header {
         font-family: $--font-family1;
         color: #ffffff;
         line-height: 200%;
+        @include my_media(500px) {
+          font-size: 12px;
+          line-height: 100%;
+          margin-top: 10px;
+        }
       }
       .pp {
         margin-left: 170px;
+        @include my_media(500px) {
+          margin-left: 100px;
+        }
       }
       .buttons {
         display: flex;
         gap: 23px;
         margin-top: 50px;
+        @include my_media(500px) {
+          flex-direction: column;
+        }
+
         .btn1 {
           @include btn_size();
           font-size: 20px;
@@ -1006,6 +1035,11 @@ header {
           font-family: $--font-family1;
           color: #ffffff;
           background-color: #ff8a00;
+          @include my_media(500px) {
+            width: 168px;
+            height: 50px;
+            font-size: 14px;
+          }
         }
         .btn2 {
           @include btn_size();
@@ -1016,6 +1050,11 @@ header {
           font-weight: 600;
           font-family: $--font-family1;
           color: #311f09;
+          @include my_media(500px) {
+            width: 168px;
+            height: 50px;
+            font-size: 14px;
+          }
         }
       }
     }
@@ -1026,6 +1065,9 @@ header {
 .footer {
   background-color: #311f09;
   padding: 150px 164px 70px;
+  @include my_media(500px) {
+    padding: 92px 25px 52px;
+  }
   .container {
     max-width: 1440px;
     padding: 0 10px;
@@ -1033,6 +1075,9 @@ header {
     display: flex;
     // gap: 20px;
     justify-content: space-between;
+    @include my_media(500px) {
+      flex-direction: column;
+    }
     .left {
       img {
       }
@@ -1044,6 +1089,10 @@ header {
         width: 352px;
         line-height: 200%;
         margin-top: 45px;
+        @include my_media(500px) {
+          font-size: 14px;
+          margin-top: 30px;
+        }
       }
       .logo {
         display: flex;
@@ -1058,15 +1107,28 @@ header {
       gap: 25px;
       ul {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        @include my_media(500px) {
+          margin-top: 70px;
+          gap: 15px;
+        }
         .l1 {
           font-size: 25px;
           font-weight: 500;
           font-family: $--font-family1;
           color: #ff8a00;
           line-height: 200%;
+          @include my_media(500px) {
+            font-size: 18;
+            line-height: 100%;
+          }
         }
         .l2 {
           width: 280px;
+          @include my_media(500px) {
+            line-height: 200%;
+          }
         }
         li {
           font-size: 20px;
@@ -1075,6 +1137,10 @@ header {
           color: #e3e2e0;
           line-height: 200%;
           margin-top: 15px;
+          @include my_media(500px) {
+            font-size: 14px;
+            line-height: 100%;
+          }
         }
       }
     }
@@ -1083,12 +1149,18 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 93px;
+    @include my_media(500px) {
+      justify-content: flex-start;
+    }
     p {
       font-size: 20px;
       font-weight: 300;
       font-family: $--font-family1;
       color: #e3e2e0;
       line-height: 200%;
+      @include my_media(500px) {
+        font-size: 14px;
+      }
     }
   }
 }
