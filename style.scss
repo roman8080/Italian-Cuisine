@@ -661,6 +661,8 @@ header {
           @include my_media(500px) {
             width: 87px;
             height: 87px;
+            bottom: 0;
+            left: 20px;
           }
         }
         .img2 {
@@ -670,6 +672,8 @@ header {
           @include my_media(500px) {
             width: 87px;
             height: 87px;
+            right: 60px;
+            top: 10px;
           }
         }
       }
@@ -787,6 +791,9 @@ header {
           color: #311f09;
           line-height: 200%;
           margin-top: 40px;
+          @include my_media(500px) {
+            font-size: 14px;
+          }
         }
         p {
           font-size: 25px;
@@ -795,6 +802,9 @@ header {
           color: #a08d76;
           line-height: 200%;
           margin-top: 30px;
+          @include my_media(500px) {
+            font-size: 14px;
+          }
         }
       }
       .element1 {

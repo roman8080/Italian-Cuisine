@@ -691,6 +691,8 @@ header .container .right .burger {
   .table .container .left .images .img1 {
     width: 87px;
     height: 87px;
+    bottom: 0;
+    left: 20px;
   }
 }
 .table .container .left .images .img2 {
@@ -702,6 +704,8 @@ header .container .right .burger {
   .table .container .left .images .img2 {
     width: 87px;
     height: 87px;
+    right: 60px;
+    top: 10px;
   }
 }
 .table .container .right {
@@ -841,6 +845,11 @@ header .container .right .burger {
   line-height: 200%;
   margin-top: 40px;
 }
+@media screen and (max-width: 500px) {
+  .our-chef .container .middle .element h3 {
+    font-size: 14px;
+  }
+}
 .our-chef .container .middle .element p {
   font-size: 25px;
   font-weight: 400;
@@ -848,6 +857,11 @@ header .container .right .burger {
   color: #a08d76;
   line-height: 200%;
   margin-top: 30px;
+}
+@media screen and (max-width: 500px) {
+  .our-chef .container .middle .element p {
+    font-size: 14px;
+  }
 }
 .our-chef .container .middle .element1 {
   display: none;
