@@ -939,6 +939,12 @@ header .container .right .burger {
 .our-customer .container .top img {
   margin-top: 57px;
 }
+@media screen and (max-width: 500px) {
+  .our-customer .container .top img {
+    width: 120px;
+    height: 120px;
+  }
+}
 .our-customer .container .top h3 {
   font-size: 30px;
   font-weight: 600;
